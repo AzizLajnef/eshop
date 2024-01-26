@@ -1,16 +1,13 @@
 function performLogin() {
-    // You may want to include actual login logic here
-
-    // For demonstration purposes, let's assume the login is successful
-    // and redirect to the dashboard page
+   
     window.location.href = "clothing2.html";
 }
 
 function like(productId) {
-    // Get the product container
+   
     var likeImage = $('#' + productId + ' .like-image');
 
-    // Toggle the visibility of the like image
+  
     likeImage.toggle();
 }
 var cart = []
@@ -25,7 +22,7 @@ function addToCart(name,price) {
     updateCartDisplay()
 }
 function removeFromCart(index) {
-  cart.splice(index, 1)// Remove item from the cart array at the specified index
+  cart.splice(index, 1)
   updateCartDisplay()
 }
 
